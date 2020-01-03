@@ -1,0 +1,27 @@
+.list {
+	height: 100vh;
+	overflow: auto;
+	list-style: none;
+	padding: 15px;
+	background: linear-gradient(to bottom, rgba(248,80,50,1) 0%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
+
+	@media (max-width: 920px) {
+		height: 30vh;
+		order: 1;
+		z-index: 1;
+		border-top-left-radius: 7px;
+		border-top-right-radius: 7px;
+	}
+
+	&__item {
+		color: #eee;
+		cursor: pointer;
+		font-size: 12px;
+		line-height: 30px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+	}
+}
